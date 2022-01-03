@@ -1,7 +1,8 @@
 """
 Rock-Paper_Scissor duel game
 """
-from Player import Player, Match
+from Player import Player
+from Match import Match
 
 
 def main():
@@ -10,8 +11,11 @@ def main():
 
     partida = Match(humano, computador)
     while humano.life > 0 and computador.life > 0:
-        partida.create_match()
-        print(partida.player1.life)
+        win = partida.create_match()
+        if win != 0:
+            print(f"{win.name} wins!")
+        else:
+            print("DRAW")
 
     print("GAME OVER")
 
