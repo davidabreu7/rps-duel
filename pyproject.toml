@@ -6,6 +6,7 @@ authors = ["David Abreu <david.abreu@outlook.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+arcade = "^2.6.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
